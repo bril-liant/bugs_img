@@ -10,7 +10,7 @@ headers = {
 
 
 def img_crawling(plusurl):
-    url = f"https://music.bugs.co.kr/search/album?q={plusurl}"
+    url = f"https://music.bugs.co.kr/search/integrated?q={plusurl}"
     result = requests.get(url, headers=headers)
     soup = BeautifulSoup(result.text, "html.parser")
 
